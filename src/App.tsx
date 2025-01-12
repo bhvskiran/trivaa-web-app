@@ -1,16 +1,19 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 
-function App() {
+import HomeScreen from "./components/HomeScreen.tsx";
+import DreamTripCard from "./components/DreamTripCard.tsx";
+import DreamTripUserForm from "./components/DreamTripUserForm.tsx";
+import DreamAdventure from "./components/DreamAdventure.tsx";
+
+const App: React.FC = () => {
   return (
     <div className="bg-orange-300 min-h-screen flex flex-col justify-center items-center pb-20">
-      <div className="bg-blue-950 h-[75vh] w-4/5">
-        <Navbar />
-      </div>
-
-      <div className="bg-blue-950 h-[90vh] w-4/5 mt-32"></div>
+      <HomeScreen />
+      <DreamTripCard />
+      <DreamTripUserForm />
+      <DreamAdventure />
     </div>
   );
-}
+};
 
 export default App;
